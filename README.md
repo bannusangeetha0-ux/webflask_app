@@ -66,3 +66,52 @@ All Python dependencies are stored in the requirements.txt file. To install them
     brew install unixodbc
     ```
 - Check [here](https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/install-microsoft-odbc-driver-sql-server-macos?view=sql-server-ver15) to add SQL Server drivers for Mac.
+
+# CMS App Deployment Analysis
+
+## Decision Change
+If application requirements evolve, I may need to switch deployment options.  
+For example, if I need **more control** over OS, networking, and custom software, I would switch to a **Virtual Machine (VM)**.  
+On the other hand, if I need **cost efficiency, scalability, and minimal management**, I would prefer **Azure App Service**.  
+These decisions depend on the balance between control, cost, and operational overhead.
+
+---
+
+## Comparison of VM vs App Service
+
+| Feature        | Virtual Machine (VM)                                    | Azure App Service                             |
+|----------------|----------------------------------------------------------|-----------------------------------------------|
+| **Cost**       | Pay per VM size (e.g., B2s: ~$25/month + OS license).   | Pay per tier (Basic B1: ~$13/month). More cost-efficient at scale. |
+| **Scalability**| Manual scaling, requires load balancer setup.            | Auto-scaling supported, scales easily with demand. |
+| **Availability**| Needs configuration for redundancy/HA.                  | High availability built-in with SLAs (99.95%). |
+| **Workflow**   | Full control over stack, requires manual patching.       | Simplified deployment (GitHub Actions, Azure DevOps, etc.). |
+
+---
+
+## Final Choice
+I chose **Azure App Service** for deploying the CMS app.  
+The reasons are:  
+1. **Scalability** – Auto-scaling without manual configuration.  
+2. **Cost-effectiveness** – Lower operational cost than maintaining VMs.  
+3. **Ease of Management** – Built-in deployment, monitoring, and patching.  
+
+---
+
+## Azure Logs Evidence
+Below are screenshots showing log entries of **successful and unsuccessful login attempts**:  
+- ![Successful Login])<img width="1894" height="828" alt="Screenshot 2025-09-16 004001" src="https://github.com/user-attachments/assets/4bbba60e-fd3c-483c-8a2b-5667972790cb" />
+
+- 
+- ![Failed Login] <img width="1693" height="758" alt="Screenshot 2025-09-16 003936" src="https://github.com/user-attachments/assets/b03d45ba-6777-4794-a1c4-86f63e64ebcb" />
+
+
+
+## Resource Group Screenshot
+The following screenshot shows the resource group with all required resources:  
+- Storage Account  
+- SQL Server  
+- SQL Database  
+- App Service (CMS Web App)  
+
+- ![Resource Group](./screenshots/resource_group.png)  
+
