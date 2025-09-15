@@ -113,5 +113,10 @@ The following screenshot shows the resource group with all required resources:
 - SQL Database  
 - App Service (CMS Web App)  
 
-- ![Resource Group](./screenshots/resource_group.png)  
+- 
+<img width="1896" height="862" alt="Screenshot 2025-09-16 001219" src="https://github.com/user-attachments/assets/0e193745-4423-4d2b-b9c8-b752d5653efb" />
+<img width="1884" height="841" alt="Screenshot 2025-09-16 001250" src="https://github.com/user-attachments/assets/4bf36dfa-4886-4e87-9b41-0d643fedcd35" />
+<img width="1905" height="826" alt="Screenshot 2025-09-16 001317" src="https://github.com/user-attachments/assets/e7a9a4c4-ed31-4c8a-b4ac-9d3ef3b43fec" />
+<img width="1889" height="841" alt="Screenshot 2025-09-16 001136" src="https://github.com/user-attachments/assets/2a5873ff-9e82-4bae-976e-6855580f9e75" />
+<img width="1907" height="894" alt="Screenshot 2025-09-16 002245" src="https://github.com/user-attachments/assets/5a6b9bf8-fdb2-410f-acc3-dd516d6003b0" />
 
