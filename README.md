@@ -9,6 +9,11 @@ This project is a Python web application built using Flask. The user can log in 
 
 Or, once the MS Login button is implemented, it will automatically log into the `admin` account.
 
+## Deployment URL
+The CMS Web App is successfully deployed and accessible at:  
+[Live App on Azure](https://bps-ekcqbaf3habddhg4.canadacentral-01.azurewebsites.net/)
+
+
 ## Project Instructions (For Student)
 
 You are expected to do the following to complete this project:
